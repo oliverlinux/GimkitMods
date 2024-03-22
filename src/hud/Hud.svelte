@@ -7,23 +7,9 @@
     import keybindManager from "../keybindManager";
     import ResetStyles from "./ResetStyles.svelte" ;
     
-    import AutoAnswer from "../scripts/AutoAnswer.svelte";
-    import InstantUse from "../scripts/2d/InstantUse.svelte";
     import CosmeticPicker from "../scripts/customization/CosmeticPicker.svelte";
     import CustomTheme from "../scripts/customization/customTheme/CustomTheme.svelte";
-    import PlayerHighlighter from "../scripts/2d/PlayerHighlighter.svelte";
-    import Freecam from "../scripts/2d/Freecam.svelte";
-    import HideEnergyPopup from "../scripts/2d/HideEnergyPopup.svelte";
-    import ClassicAutoPurchase from "../scripts/classic/AutoPurchase.svelte";
-    import RichAutoPurchase from "../scripts/superRichMode/AutoPurchase.svelte";
-    import ShowImposters from "../scripts/trustNoOne/ShowImposters.svelte";
-    import Ctf from "../scripts/ctf/Ctf.svelte";
-    import Tag from "../scripts/tag/Tag.svelte";
-    import OneWayOut from "../scripts/oneWayOut/OneWayOut.svelte";
-    import Snowbrawl from "../scripts/snowbrawl/Snowbrawl.svelte";
-    import FloorIsLava from "../scripts/floorIsLava/FloorIsLava.svelte";
-    import Farmchain from "../scripts/farmchain/Farmchain.svelte";
-    import Speedup from "../scripts/2d/Speedup.svelte";
+
 
     keybindManager.addKeybind(new Set(["\\"]), () => {
         showHud.update(v => !v);
@@ -50,26 +36,7 @@
         <CustomTheme />
     </Menu>
 
-    <Menu name="General Cheats">
-        <AutoAnswer />
-        <InstantUse />
-        <Speedup />
-        <PlayerHighlighter />
-        <Freecam />
-        <HideEnergyPopup />
-    </Menu>
 
-    <Menu name="Gamemode Specific Cheats">
-        <ClassicAutoPurchase />
-        <RichAutoPurchase />
-        <Ctf />
-        <Tag />
-        <OneWayOut />
-        <Snowbrawl />
-        <FloorIsLava />
-        <ShowImposters />
-        <Farmchain />
-    </Menu>
 </div>
 
 <style>
